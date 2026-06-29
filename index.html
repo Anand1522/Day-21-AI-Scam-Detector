@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>AI Scam Detector</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+<div class="bg1"></div>
+<div class="bg2"></div>
+
+<header>
+
+    <h1>🛡️ AI Scam Detector</h1>
+
+    <p>
+        Detect phishing messages, fake job offers, investment scams,
+        lottery frauds, OTP scams, romance scams and more using AI.
+    </p>
+
+</header>
+
+<main>
+
+<section class="card">
+
+<h2>Analyze Text</h2>
+
+<textarea
+id="inputText"
+placeholder="Paste any suspicious email, SMS, WhatsApp message, job offer, investment proposal, website content or social media message here..."></textarea>
+
+<div class="toolbar">
+
+<span id="charCount">
+0 Characters
+</span>
+
+<div>
+
+<button id="sampleBtn">
+Sample
+</button>
+
+<button id="clearBtn">
+Reset
+</button>
+
+</div>
+
+</div>
+
+<button id="detectBtn"
+class="detect-btn">
+
+🔍 Analyze with AI
+
+</button>
+
+</section>
+
+<section
+class="loading hidden"
+id="loading">
+
+<div class="spinner"></div>
+
+<p>
+AI is analyzing...
+</p>
+
+</section>
+
+<section
+class="result hidden"
+id="result">
+
+<div class="top-score">
+
+<div class="circle">
+
+<span id="score">
+0
+</span>
+
+<p>Scam Score</p>
+
+</div>
+
+<div class="risk">
+
+<h2 id="riskLevel">
+Low Risk
+</h2>
+
+<p id="scamType">
+
+General
+
+</p>
+
+</div>
+
+</div>
+
+<div class="grid">
+
+<div class="box">
+
+<h3>
+
+📌 AI Explanation
+
+</h3>
+
+<p id="explanation"></p>
+
+</div>
+
+<div class="box">
+
+<h3>
+
+🚩 Red Flags
+
+</h3>
+
+<ul id="flags">
+
+</ul>
+
+</div>
+
+<div class="box">
+
+<h3>
+
+✅ Safety Tips
+
+</h3>
+
+<ul id="tips">
+
+</ul>
+
+</div>
+
+<div class="box">
+
+<h3>
+
+🤖 AI Confidence
+
+</h3>
+
+<h2 id="confidence">
+
+0%
+
+</h2>
+
+</div>
+
+</div>
+
+<div class="bottom-buttons">
+
+<button id="copyBtn">
+
+Copy Result
+
+</button>
+
+<button id="newBtn">
+
+Analyze Another
+
+</button>
+
+</div>
+
+</section>
+
+<section class="examples">
+
+<h2>
+
+Try These Examples
+
+</h2>
+
+<div class="example-grid">
+
+<div class="example">
+
+🎁
+
+<h3>
+
+Lottery Scam
+
+</h3>
+
+<p>
+
+Congratulations! You won ₹25 lakh. Pay ₹999 processing fee.
+
+</p>
+
+</div>
+
+<div class="example">
+
+💼
+
+<h3>
+
+Fake Job
+
+</h3>
+
+<p>
+
+Amazon is hiring. Pay ₹1500 registration fee today.
+
+</p>
+
+</div>
+
+<div class="example">
+
+🏦
+
+<h3>
+
+Bank Scam
+
+</h3>
+
+<p>
+
+Your account is blocked. Verify OTP immediately.
+
+</p>
+
+</div>
+
+<div class="example">
+
+❤️
+
+<h3>
+
+Romance Scam
+
+</h3>
+
+<p>
+
+I love you. Please send money for my emergency.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="features">
+
+<h2>
+
+Why Use AI Scam Detector?
+
+</h2>
+
+<div class="feature-grid">
+
+<div class="feature">
+
+⚡
+
+<h3>
+
+Instant Detection
+
+</h3>
+
+<p>
+
+Analyze suspicious messages within seconds.
+
+</p>
+
+</div>
+
+<div class="feature">
+
+🧠
+
+<h3>
+
+AI Reasoning
+
+</h3>
+
+<p>
+
+Explains why content appears suspicious.
+
+</p>
+
+</div>
+
+<div class="feature">
+
+🔒
+
+<h3>
+
+Privacy First
+
+</h3>
+
+<p>
+
+Everything runs locally in your browser.
+
+</p>
+
+</div>
+
+<div class="feature">
+
+📱
+
+<h3>
+
+Works Everywhere
+
+</h3>
+
+<p>
+
+Desktop, tablet and mobile devices.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+
+Made with ❤️ for the
+30 Days • 30 AI Websites Challenge
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
